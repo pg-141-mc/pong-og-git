@@ -2,38 +2,53 @@
 
 A classic Pong 🏓 game made by GitHub 🐈‍⬛ 
 
+## 🎮 Play Live
+
+**[Click here to play the game!](https://pg-141-mc.github.io/pong-og-git/pinball/)**
+
+The game is hosted live on GitHub Pages and ready to play in your browser!
+
 ## 📋 Overview
 
-Experience the timeless arcade classic! This is a faithful recreation of Pong, the legendary game that started it all. Compete against an AI opponent or challenge a friend in this simple yet addictive two-player paddle game.
+Experience the timeless arcade classic! This is a faithful recreation of Pong, the legendary game that started it all. Compete against an AI opponent in this simple yet addictive paddle game.
 
 ## ✨ Features
 
-- **Two-player gameplay** - Play against another person on the same machine
-- **AI opponent** - Challenge yourself against intelligent computer-controlled paddle
+- **Single-player gameplay** - Challenge yourself against intelligent AI
+- **Multiple difficulty levels** - Easy, Normal, and Hard modes
+- **Adjustable win score** - Set your own winning target
+- **Sound effects** - Audio feedback for paddle hits, walls, and scoring
+- **Volume control** - Adjust audio levels to your preference
 - **Classic mechanics** - Authentic Pong physics and gameplay
-- **Score tracking** - Keep track of points during matches
-- **Simple controls** - Intuitive keyboard controls for easy play
+- **Score tracking** - Real-time scoreboard during matches
+- **Pause/Resume** - Take a break anytime with Space bar
+- **Responsive design** - Play on desktop or mobile devices
 
 ## 🎮 How to Play
 
 ### Controls
-- **Player 1 (Left Paddle):** `W` and `S` keys (or `↑` and `↓`)
-- **Player 2 (Right Paddle):** `Up Arrow` and `Down Arrow` keys
-- **Start/Reset:** `Space` key
-- **Quit:** `ESC` key
+- **Player Paddle:** Move with mouse or `Arrow Up` / `Arrow Down` keys
+- **Pause/Resume:** `Space` bar
+- **Start Game:** Click "Start" button or overlay button
 
 ### Objective
-- Use your paddle to hit the ball back and forth across the screen
-- Score a point when your opponent fails to return the ball
-- First to reach the winning score wins the match!
+- Use your paddle to hit the ball back and forth
+- Score a point when the computer fails to return the ball
+- First player to reach the win score wins the match!
+
+### Game Options
+- **Difficulty:** Choose between Easy, Normal, and Hard AI opponents
+- **Win Score:** Set how many points needed to win (default: 7)
+- **Volume:** Adjust sound effects volume with the slider
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- [Python 3.7+](https://www.python.org/)
-- [Pygame](https://www.pygame.org/)
+### Play Online
+Simply visit the live game: **[https://pg-141-mc.github.io/pong-og-git/pinball/](https://pg-141-mc.github.io/pong-og-git/pinball/)**
 
-### Installation
+### Local Development
+
+If you want to run it locally:
 
 1. Clone the repository:
 ```bash
@@ -41,38 +56,59 @@ git clone https://github.com/pg-141-mc/pong-og-git.git
 cd pong-og-git
 ```
 
-2. Install dependencies:
-```bash
-pip install pygame
-```
+2. Open the game in your browser:
+   - Navigate to the `pinball` folder
+   - Open `index.html` in your browser
 
-3. Run the game:
+Or use a local server:
 ```bash
-python pong.py
+# Python 3
+python -m http.server 8000
+
+# Then visit http://localhost:8000/pinball/
 ```
 
 ## 📁 Project Structure
 
 ```
 pong-og-git/
-├── README.md           # This file
-├── pong.py            # Main game file
-├── requirements.txt   # Python dependencies
+├── README.md              # This file
+├── pinball/
+│   ├── index.html        # Game HTML
+│   ├── styles.css        # Game styling
+│   └── script.js         # Game logic and AI
 └── ...
 ```
 
 ## 🎯 Game Rules
 
-1. Each player controls a paddle on their side of the screen
-2. The ball bounces around the playing field
-3. When a player misses the ball, the opponent scores a point
-4. First player to reach the target score wins
-5. Game resets after each match
+1. Use your paddle to hit the ball back across the court
+2. When the computer misses the ball, you score a point
+3. When you miss, the computer scores a point
+4. First to reach the win score wins the match
+5. Press "Restart" to play again with reset scores
+
+## 🤖 AI Difficulty Levels
+
+- **Easy:** Slower AI with delayed reactions - perfect for beginners
+- **Normal:** Balanced AI with standard speed and reaction time
+- **Hard:** Fast AI with sharp reflexes - a real challenge!
+
+## 🔊 Sound Effects
+
+The game includes dynamic sound effects for:
+- Paddle hits (high-pitched tone)
+- Wall bounces (medium tone)
+- Scoring (low tone)
+- Victory (winning melody)
 
 ## 🛠️ Technologies Used
 
-- **Python 3** - Core programming language
-- **Pygame** - Game development library for graphics and physics
+- **HTML5** - Game structure and canvas
+- **CSS3** - Styling with modern gradients and effects
+- **JavaScript** - Game logic, AI, and Web Audio API
+- **Canvas API** - Graphics rendering
+- **Web Audio API** - Sound effects and music
 
 ## 🤝 Contributing
 
@@ -89,8 +125,10 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🎮 Have Fun!
 
-Enjoy the game and may the best player win! 🏆
+Enjoy the game and good luck beating the AI! 🏆
 
 ---
 
 **Created with ❤️ by GitHub 🐈‍⬛**
+
+[Play Now](https://pg-141-mc.github.io/pong-og-git/pinball/) →
